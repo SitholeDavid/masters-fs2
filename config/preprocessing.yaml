@@ -1,0 +1,16 @@
+path:
+  raw_path: 'B:\LJSpeech'
+  input_dir: './../data/raw_data'
+  processed_path: ''
+
+audio:
+  sampling_rate: 22050
+  hop_length: 256
+  win_length: 1024
+  n_fft: 1024
+  n_mel_channels: 80
+  mel_fmin: 0
+  mel_fmax: 8000
+
+text:
+  text_cleaners: ["english_cleaners"]

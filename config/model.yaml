@@ -1,0 +1,33 @@
+model:
+  encoder:
+    max_seq_len: 200
+    src_vocab_size: 99
+    n_layers: 4
+    n_heads: 2
+    embed_dim: 256
+    dropout: 0.4
+    forward_expansion: 2
+  variance_predictor:
+    embed_dim: 256
+    out_dim: 1
+    kernel_size: 3
+    dropout: 0.2
+  length_regulator:
+    max_trg_len: 1000
+  decoder:
+    max_seq_len: 1000
+    trg_vocab_size: 80
+    n_layers: 4
+    n_heads: 2
+    embed_dim: 256
+    dropout: 0.4
+    forward_expansion: 2
+  hidden_2_mel:
+    in_dim: 256
+    out_dim: 80
+  postnet:
+    in_dim: 80 
+    postnet_dim: 512
+    n_layers: 5
+    kernel_size: 5  
+
