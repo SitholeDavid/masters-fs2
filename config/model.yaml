@@ -5,7 +5,7 @@ model:
     n_layers: 4
     n_heads: 2
     embed_dim: 256
-    dropout: 0.4
+    dropout: 0.1
     forward_expansion: 2
   variance_predictor:
     embed_dim: 256
@@ -20,7 +20,7 @@ model:
     n_layers: 4
     n_heads: 2
     embed_dim: 256
-    dropout: 0.4
+    dropout: 0.1
     forward_expansion: 2
   hidden_2_mel:
     in_dim: 256
